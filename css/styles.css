@@ -118,3 +118,9 @@ div.card {
 .card-description {
     gap: 8px;
 }
+
+#hawkins-card {
+    width: 100%;
+    justify-content: left;
+    flex-direction: row;
+}
