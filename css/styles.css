@@ -33,6 +33,8 @@ li a:hover {
 
 /* Navigációs menü vége */
 
+/* Hero */
+
 div.hero {
     margin: 0 auto;
     padding: 64px 24px;
@@ -77,6 +79,10 @@ p {
     max-height: 200px;
     margin: 64px 64px auto;
 }
+
+/* Hero vége */
+
+/* Cards */
 
 div.cards {
     display: flex;
