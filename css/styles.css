@@ -70,6 +70,14 @@ h1, p {
     color: white;
 }
 
+.animate__animated animate__bounce {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
 p {
     line-height: 130%;
     font-size: 32px;
