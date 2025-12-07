@@ -1,7 +1,88 @@
+/* Alapbeállítások */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
 
+/* Alapbeállítások VÉGE */
+
+/* HEADER beállítások */
+
+/* Page logo */
+
+img.page-logo {
+    width: 120px;
+}
+
+/* Navigation */
+
+header.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 96px;
+    background-color: rgb(255, 236, 202);
+}
+
+div.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.navigation {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    text-align: center;
+    padding: 6px 12px;
+    font-weight: 600;
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+}
+
+a.nav-list-item {
+    text-decoration: none;
+    color: rgb(127, 44, 0);
+}
+
+/* Hero content */
+
+div.hero-container {
+    display: flex;
+    height: 80vh;
+    background-image: url(../img/1.Hero/pizza_hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    padding: 0 96px;
+}
+
+h1.hero-title {
+    font-family: "Knewave", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+p.hero-subtitle {
+    font-family: "Google Sans Flex", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
