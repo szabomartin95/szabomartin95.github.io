@@ -57,7 +57,7 @@ a.nav-list-item {
     color: rgb(127, 44, 0);
 }
 
-/* Hero content */
+/* HERO */
 
 div.hero-title-content {
     display: flex;
@@ -106,4 +106,21 @@ button.hero-cta-button {
     background-color: rgb(255, 225, 0);
     -webkit-box-shadow: 0px 5px 15px 5px rgba(129, 46, 0, 0.2);
     box-shadow: 0px 5px 15px 5px rgba(129, 46, 0, 0.2);
+}
+
+/* HERO VÉGE */
+
+/* Kategóriák */
+
+div.main-categories {
+    width: 60%;
+    display: grid;
+    place-items: center;
+    height: 600px ;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 64px 96px 64px 96px;
+}
+
+div.categories {
+    padding: 16px;
 }
