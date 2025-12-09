@@ -262,7 +262,7 @@ div.empty-container {
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     header.header {
         padding: 12px 16px 12px 16px;
     }
@@ -329,7 +329,7 @@ div.empty-container {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
     header.header {
         padding: 16px 24px 16px 24px;
     }
