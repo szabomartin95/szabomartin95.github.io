@@ -7,50 +7,89 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
         rel="stylesheet">
-    <title>It's Pizza Time - Süsd meg magad!</title>
+    <meta name="description"
+        content="Tanuld meg a tökéletes házi pizza készítését tésztától a feltétekig. Klasszikus és különleges pizza receptek, tippek és saját recept beküldési lehetőség.">
+    <meta property="og:title" content="It’s Pizza Time – Házi pizza receptek">
+    <meta property="og:description"
+        content="Fedezd fel a legfinomabb házi pizza recepteket, tésztákat, szószokat és különleges feltéteket. Küldd be a saját kedvenc pizzádat is!">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="It’s Pizza Time">
+    <title>It’s Pizza Time – Házi pizza receptek, tészták, szószok lépésről lépésre</title>
 </head>
 
 <body>
-
-    <header class="header">
-        <a href="https://szabomartin95.github.io"><img class="page-logo" src="img/0.Page Logo/pizza_time_logo.png"
-                alt="Az It's Pizza Time logója"></a>
-        <div class="navbar">
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#" class="nav-list-item">Kezdőlap</a></li>
-                    <li><a href="#" class="nav-list-item">Receptek</a></li>
-                    <li><a href="#" class="nav-list-item">Tészták</a></li>
-                    <li><a href="#" class="nav-list-item">Szószok</a></li>
-                    <li><a href="#" class="nav-list-item">Kapcsolat</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="hero-container">
-            <div class="hero-title-content">
-                <h1 class="hero-title">
-                    A tökéletes pizza otthon kezdődik.
+    <div class="main-container">
+        <header class="header">
+            <div class="navbar">
+                <img src="img/0. Page Logo/pizza_time_logo.png" alt="It's Pizza Time Logo" class="site-logo">
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-list-item item-1"><a href="index.html">Kezdőlap</a></li>
+                        <li class="nav-list-item item-2"><a href="#">Receptek</a></li>
+                        <li class="nav-list-item item-3"><a href="#">Tészták</a></li>
+                        <li class="nav-list-item item-4"><a href="#">Szószok</a></li>
+                    </ul>
+                </nav>
+                <button class="send-yours">Küldd be a recepted!</button>
+            </div>
+        </header>
+        <div class="hero-section-container">
+            <div class="hero-container">
+                <h1 class="hero-title">A tökéletes pizza otthon kezdődik.
                 </h1>
                 <p class="hero-subtitle">Tanuld meg az igazi olasz pizzakészítés alapjait a tésztától a feltétekig.
                     Egyszerű receptek, garantált siker.</p>
-            </div>
-            <div class="hero-cta">
-                <button class="hero-cta-button">Nézd meg az alapreceptet</button>
+                <button class="hero-cta">Nézd meg az alapreceptet</button>
             </div>
         </div>
-        <div class="main-categories">
-            <div class="categories category1">1</div>
-            <div class="categories category2">2</div>
-            <div class="categories category3">3</div>
+        <div class="categories-section-container">
+            <div class="categories-container">
+                <div class="category category-1">
+                    <img class="category-image" src="img/2. Kategóriák/classic_pizza.png" alt="Classic pizza receptek">
+                    <h2 class="category-title">Classic pizzák</h2>
+                    <p class="category-description">Az örök kedvencek: Margherita, Prosciutto, Pepperoni és társaik.</p>
+                    <button class="category-btn">Tovább</button>
+                </div>
+                <div class="category category-2">
+                    <img class="category-image" src="img/2. Kategóriák/spacialis_pizza.png"
+                        alt="Speciális pizza receptek">
+                    <h2 class="category-title">Speciális pizzák</h2>
+                    <p class="category-description">BBQ csirke, fehér pizza, vegán és extrán sajtos különlegességek.</p>
+                    <button class="category-btn">Tovább</button>
+                </div>
+                <div class="category category-3">
+                    <img class="category-image" src="img/2. Kategóriák/alap_pizza.png" alt="Pizza alap receptek">
+                    <h2 class="category-title">Pizza alapok</h2>
+                    <p class="category-description">Tökéletes pizzatészták, szószok és feltétek lépésről lépésre.</p>
+                    <button class="category-btn">Tovább</button>
+                </div>
+            </div>
         </div>
-    </main>
+        <div class="highlighted-section-container">
+            <div class="highlighted-container">
+                <h2 class="highlighted-title">🍕 Kiemelt recept</h2>
+                <p class="highlighted-description">Az igazi klasszikus, ami sosem megy ki a divatból. Ropogós szél, lágy
+                    mozzarella és friss bazsalikom.</p>
+                <p class="highlighted-description bold">Adatok: </p>
+                <ul class="instructions">
+                    <li>⏱ Előkészítés: 20 perc</li>
+                    <li>🔥 Sütés: 12 perc</li>
+                    <li>⭐ Nehézség: Könnyű</li>
+                </ul>
+            </div>
+            <div class="empty-container"></div>
+        </div>
+        <div class="gallery-container"></div>
+        <div class="tips-container"></div>
+        <footer class="footer"></footer>
+    </div>
 </body>
 
 </html>
