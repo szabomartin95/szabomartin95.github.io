@@ -262,124 +262,127 @@ div.empty-container {
     width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
-    header.header {
-        padding: 12px 16px 12px 16px;
-    }
+/* TABLET NÉZET – 600px–991px között */
+@media (max-width: 991px) and (min-width: 600px) {
 
-    div.navbar {
-        justify-content: center;
-    }
+  header.header {
+    padding: 16px 24px;
+  }
 
-    nav {
-        display: none;
-    }
+  img.site-logo {
+    width: 80px;
+  }
 
-    img.site-logo {
-        width: 60px;
-    }
+  div.hero-section-container {
+    padding: 0 24px;
+  }
 
-    button.send-yours {
-        display: none;
-    }
+  div.hero-container {
+    gap: 1.5rem;
+  }
 
-    div.hero-section-container {
-        padding: 0px 16px;
-    }
+  h1.hero-title {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
 
-    div.hero-container {
-        gap: 1rem;
-    }
+  p.hero-subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+  }
 
-    h1.hero-title {
-        font-size: 6rem;
-        line-height: 5rem;
-    }
+  div.categories-section-container {
+    padding: 24px 16px 64px;
+    margin-top: 0;
+  }
 
-    p.hero-subtitle {
-        font-size: 1.5rem;
-        text-align: center;
-    }
+  div.categories-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 80%;
+  }
 
-    div.categories-section-container {
-        padding: 24px 16px 64px 16px;
-        margin-top: 0;
-    }
+  div.highlighted-section-container {
+    padding-top: 46px;
+    padding-bottom: 46px;
+    flex-direction: column;
+  }
 
-    div.categories-container {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        width: 100%;
-    }
+  div.highlighted-container {
+    padding: 0 16px;
+    width: 100%;
+    gap: 1.5rem;
+  }
 
-    div.highlighted-section-container {
-        padding-top: 46px;
-        padding-bottom: 46px;
-        flex-direction: column;
-    }
-
-    div.highlighted-container {
-        padding: 0 16px 0 16px;
-        width: 100%;
-        gap: 1.5rem;
-    }
-
-    div.empty-container {
-        display: none;
-    }
+  div.empty-container {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 992px) {
-    header.header {
-        padding: 16px 24px 16px 24px;
-    }
+/* MOBIL NÉZET – 599px alatt */
+@media (max-width: 599px) {
 
-    img.site-logo {
-        width: 80px;
-    }
+  header.header {
+    padding: 12px 16px;
+  }
 
-    div.hero-section-container {
-        padding: 0px 24px;
-    }
+  div.navbar {
+    justify-content: center;
+  }
 
-    div.hero-container {
-        gap: 1.5rem;
-    }
+  nav {
+    display: none;
+  }
 
-    h1.hero-title {
-        font-size: 6rem;
-        line-height: 5rem;
-    }
+  img.site-logo {
+    width: 60px;
+  }
 
-    p.hero-subtitle {
-        font-size: 1.5rem;
-        text-align: center;
-    }
+  button.send-yours {
+    display: none;
+  }
 
-    div.categories-section-container {
-        padding: 24px 16px 64px 16px;
-        margin-top: -100;
-    }
+  div.hero-section-container {
+    padding: 0 16px;
+  }
 
-    div.categories-container {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-        width: 80%;
-    }
+  div.hero-container {
+    gap: 1rem;
+  }
 
-    div.highlighted-section-container {
-        padding-top: 46px;
-        padding-bottom: 46px;
-        flex-direction: column;
-    }
+  h1.hero-title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 
-    div.highlighted-container {
-        padding: 0 16px 0 16px;
-        width: 100%;
-        gap: 1.5rem;
-    }
+  p.hero-subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
 
-    div.empty-container {
-        display: none;
-    }
+  div.categories-section-container {
+    padding: 24px 16px 64px;
+    margin-top: 0;
+  }
+
+  div.categories-container {
+    grid-template-columns: 1fr;  /* 1 oszlop mobilon */
+    width: 100%;
+  }
+
+  div.highlighted-section-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex-direction: column;
+  }
+
+  div.highlighted-container {
+    padding: 0 16px;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  div.empty-container {
+    display: none;
+  }
 }
