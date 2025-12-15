@@ -1,6 +1,90 @@
+/* Alapbeállítások */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #D7B520;
+}
+
+/* SZÍNEK: 
+
+Fejléc: #E7E6E6
+Aside: #549DDD
+Szekció 1: #FCE3D3
+Szekció 2: #FFF2C4
+Szekció 3: #DCEBF9
+Lábléc: #E7E6E6
+Border: #3C72A2
+
+*/
+
+.main-container {
+    width: 80%;
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 5fr;
+    gap: 24px;
+    padding: 24px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    background-color: #E7E6E6;
+    height: 250px;
+    border-radius: 8px;
+    border: 2px solid #3C72A2;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    background-color: #549DDD;
+    padding: 32px;
+    border-radius: 8px;
+    border: 2px solid #3C72A2;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+    grid-column: 2 / -1;
+    height: 250px;
+    padding: 32px;
+    border-radius: 8px;
+    border: 2px solid #3C72A2;
+}
+
+.section-1 {
+    background-color: #FCE3D3;
+}
+
+.section-2 {
+    background-color: #FFF2C4;
+}
+
+.section-3 {
+    background-color: #DCEBF9;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    background-color: #E7E6E6;
+    height: 250px;
+    border-radius: 8px;
+    border: 2px solid #3C72A2;
+}
