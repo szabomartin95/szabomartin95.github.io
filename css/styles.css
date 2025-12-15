@@ -48,6 +48,10 @@ Border: #3C72A2
     height: 250px;
     border-radius: 8px;
     border: 2px solid #3C72A2;
+    background-image: url(../img/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -100px;
 }
 
 .sidebar {
@@ -58,6 +62,15 @@ Border: #3C72A2
     border-radius: 8px;
     border: 2px solid #3C72A2;
 }
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+}
+
 
 .section-1,
 .section-2,
