@@ -44,7 +44,11 @@ Border: #3C72A2
 .header {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #E7E6E6;
+    padding: 32px;
     height: 250px;
     border-radius: 8px;
     border: 2px solid #3C72A2;
@@ -52,6 +56,16 @@ Border: #3C72A2
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px -100px;
+    
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 .sidebar {
@@ -68,7 +82,18 @@ ul {
 }
 
 li {
+    
+    font-weight: 600;
+    line-height: 180%;
+}
+
+a {
     text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(0, 4, 255);
 }
 
 
@@ -80,6 +105,7 @@ li {
     padding: 32px;
     border-radius: 8px;
     border: 2px solid #3C72A2;
+    overflow: auto;
 }
 
 .section-1 {
@@ -100,4 +126,72 @@ li {
     height: 250px;
     border-radius: 8px;
     border: 2px solid #3C72A2;
+}
+
+.travel-form {
+  max-width: 520px;
+  margin: 32px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.form-help {
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+/* 1) label dőlt + 1.2x méret + 2) label felül */
+.field label {
+  display: block;
+  font-style: italic;
+  font-size: 1.2em;
+  margin-bottom: 6px;
+}
+
+/* kötelező mezők vizuális jelölése */
+.field input:required,
+.field textarea:required {
+  border-left: 4px solid #ffb300;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: 2px solid #ffd54f;
+  border-color: #888;
+}
+
+.hint {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #ffc400;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #ffe082;
 }

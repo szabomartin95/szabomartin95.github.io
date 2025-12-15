@@ -14,20 +14,68 @@
 
 <body>
     <div class="main-container">
-        <header class="header">Header</header>
+        <header class="header">
+            <h1>Strandolós tavak Magyarországon</h1>
+        </header>
         <aside class="sidebar">
             <nav class="navlist">
                 <ul>
-                    <li><a href="#section-1">Szekció 1</a></li>
-                    <li><a href="#section-2">Szekció 2</a></li>
-                    <li><a href="#section-3">Szekció 3</a></li>
+                    <li><a href="#section-1">Balaton</a></li>
+                    <li><a href="#section-2">Tisza-tó</a></li>
+                    <li><a href="#section-3">Szelidi-tó</a></li>
                 </ul>
             </nav>
         </aside>
-        <div class="section-1" id="section-1">SZ1</div>
-        <div class="section-2" id="section-2">SZ2</div>
-        <div class="section-3" id="section-3">SZ3</div>
-        <footer class="footer">Footer</footer>
+        <div class="section-1" id="section-1">
+            <img src="" alt="">
+            <h2>Balaton</h2>
+            <p>A Balaton Magyarország legnagyobb tava, amit sokan “magyar tengerként” emlegetnek. A partján rengeteg
+                strand, sétány és kilátópont található, ezért nyáron különösen népszerű. Az északi part vulkanikus
+                dombjai és borvidékei (például Badacsony környéke) hangulatos kirándulóhelyek. A déli part inkább
+                sekélyebb, homokosabb és családbarátabb, gyorsan melegszik a víz. Naplementekor a tó tükrén elképesztően
+                szépen csillog a fény, ami fotózáshoz is szuper. A környéken rengeteg bicikliút van, a Balaton
+                körbetekerése sokak bakancslistás programja. Ha szereted a hajózást, több kikötőből is indulnak
+                sétahajók. A Balaton környéke gasztroban is erős: lángos, halételek, borok és fagyizók minden
+                mennyiségben. Ősszel és tavasszal nyugisabb, ilyenkor a túrázás és a panoráma a fő attrakció. Röviden: a
+                Balaton egyszerre pihenés, sport, és klasszikus nyári vibe.</p>
+        </div>
+        <div class="section-2" id="section-2"></div>
+        <div class="section-3" id="section-3"></div>
+        <footer class="footer">
+            <form class="travel-form" action="#" method="post">
+                <p class="form-help">
+                    A csillaggal (*) jelölt mezők kötelezőek. Kérlek, valós adatokat adj meg, hogy vissza tudjunk
+                    jelezni.
+                </p>
+
+                <!-- Név (kötelező) -->
+                <div class="field">
+                    <label for="fullName">Teljes név *</label>
+                    <input type="text" id="fullName" name="fullName" required minlength="3" maxlength="50"
+                        placeholder="Pl.: Szabó Martin" autocomplete="name" />
+                    <small class="hint">Minimum 3, maximum 50 karakter.</small>
+                </div>
+
+                <!-- Email (kötelező) -->
+                <div class="field">
+                    <label for="email">Email cím *</label>
+                    <input type="email" id="email" name="email" required maxlength="80"
+                        placeholder="pl.: martin@email.com" autocomplete="email" />
+                    <small class="hint">Oda küldjük a visszaigazolást.</small>
+                </div>
+
+                <!-- Üzenet (nem kötelező) -->
+                <div class="field">
+                    <label for="message">Üzenet</label>
+                    <textarea id="message" name="message" maxlength="500" rows="5"
+                        placeholder="Írd meg, melyik tavat választanád, és miért…"></textarea>
+                    <small class="hint">Maximum 500 karakter.</small>
+                </div>
+
+                <!-- Gomb -->
+                <button type="submit" class="btn">Küldés</button>
+            </form>
+        </footer>
     </div>
 </body>
 
