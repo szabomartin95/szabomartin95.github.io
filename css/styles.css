@@ -1,19 +1,19 @@
 /* Alapbeállítások */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #D7B520;
+  background-color: #D7B520;
 }
 
 /* SZÍNEK: 
@@ -29,95 +29,174 @@ Border: #3C72A2
 */
 
 .main-container {
-    width: 80%;
-    margin: 24px auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 5fr;
-    gap: 24px;
-    padding: 24px;
-    border: 2px solid #ddd;
-    border-radius: 20px;
-    background-color: #fff;
+  width: 80%;
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 5fr;
+  gap: 24px;
+  padding: 24px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  background-color: #fff;
 }
 
 .header {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #E7E6E6;
-    padding: 32px;
-    height: 250px;
-    border-radius: 8px;
-    border: 2px solid #3C72A2;
-    background-image: url(../img/header_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px -100px;
-    
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E7E6E6;
+  padding: 32px;
+  height: 250px;
+  border-radius: 8px;
+  border: 2px solid #3C72A2;
+  background-image: url(../img/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -100px;
+
 }
 
 h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 130%;
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 2px #000000;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .sidebar {
-    grid-column: 1 / 2;
-    grid-row: 2 / 5;
-    background-color: #549DDD;
-    padding: 32px;
-    border-radius: 8px;
-    border: 2px solid #3C72A2;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
+  background-color: #549DDD;
+  padding: 32px;
+  border-radius: 8px;
+  border: 2px solid #3C72A2;
+  gap: 46px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 li {
-    
-    font-weight: 600;
-    line-height: 180%;
+
+  font-weight: 600;
+  line-height: 180%;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 a:hover {
-    color: rgb(0, 4, 255);
+  color: rgb(0, 4, 255);
 }
 
+/* Form */
+
+label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Szöveges mezők */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+}
+
+/* Focus állapot */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ff9800;
+  box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.25);
+}
+
+/* Radio csoport */
+label input[type="radio"] {
+  margin-right: 8px;
+}
+
+label:has(input[type="radio"]) {
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* Submit gomb */
+input[type="submit"] {
+  margin-top: 24px;
+  padding: 12px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #ffb300;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffc947;
+}
+
+/* Kötelező mezők finom jelzése */
+input:required,
+select:required {
+  border-left: 4px solid #ffb300;
+}
+
+/* Tavak kártyái */
+
+img {
+  width: 150px;
+  border-radius: 8px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
 
 .section-1,
 .section-2,
 .section-3 {
-    grid-column: 2 / -1;
-    height: 250px;
-    padding: 32px;
-    border-radius: 8px;
-    border: 2px solid #3C72A2;
-    overflow: auto;
+  grid-column: 2 / -1;
+  height: 250px;
+  padding: 32px;
+  border-radius: 8px;
+  border: 2px solid #3C72A2;
+  overflow: auto;
+  gap: 12px;
 }
 
 .section-1 {
-    background-color: #FCE3D3;
+  background-color: #FCE3D3;
 }
 
 .section-2 {
-    background-color: #FFF2C4;
+  background-color: #FFF2C4;
 }
 
 .section-3 {
-    background-color: #DCEBF9;
+  background-color: #DCEBF9;
 }
 
 .footer {
@@ -128,70 +207,57 @@ a:hover {
     border: 2px solid #3C72A2;
 }
 
-.travel-form {
-  max-width: 520px;
-  margin: 32px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  font-family: Arial, sans-serif;
+/* TABLET NÉZET */
+@media (max-width: 991px) and (min-width: 600px) {
+  .main-container {
+    width: 100%;
+    margin: 12px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .header {
+    grid-column: 1 / -1;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    display: none;
+  }
+  
 }
 
-.form-help {
-  margin-bottom: 16px;
-  font-size: 0.95rem;
-  color: #333;
-}
+/* Mobil NÉZET */
+@media (max-width: 599px) {
+  .main-container {
+    width: 100%;
+    margin: 16px auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    gap: 16px;
+    padding: 16px;
+  }
 
-.field {
-  margin-bottom: 16px;
-}
+  .header {
+    grid-column: 1 / -1;
+  }
 
-/* 1) label dőlt + 1.2x méret + 2) label felül */
-.field label {
-  display: block;
-  font-style: italic;
-  font-size: 1.2em;
-  margin-bottom: 6px;
-}
+  .sidebar {
+    grid-template-columns: 1 / 2;
+    grid-template-rows: 5 / 6;
+  }
 
-/* kötelező mezők vizuális jelölése */
-.field input:required,
-.field textarea:required {
-  border-left: 4px solid #ffb300;
-}
+  h1 {
+    font-size: 2rem;
+  }
 
-.field input,
-.field textarea {
-  width: 100%;
-  padding: 10px 12px;
-  border: 1px solid #bbb;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.field input:focus,
-.field textarea:focus {
-  outline: 2px solid #ffd54f;
-  border-color: #888;
-}
-
-.hint {
-  display: block;
-  margin-top: 6px;
-  font-size: 0.85rem;
-  color: #555;
-}
-
-.btn {
-  padding: 10px 16px;
-  border: 1px solid #000;
-  border-radius: 10px;
-  background: #ffc400;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.btn:hover {
-  background: #ffe082;
+  nav {
+    display: none;
+  }
+  
 }
