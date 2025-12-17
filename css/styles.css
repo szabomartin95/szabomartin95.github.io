@@ -179,7 +179,7 @@ img {
 .section-2,
 .section-3 {
   grid-column: 2 / -1;
-  height: 250px;
+  height: 350px;
   padding: 32px;
   border-radius: 8px;
   border: 2px solid #3C72A2;
@@ -200,26 +200,36 @@ img {
 }
 
 .footer {
-    grid-column: 1 / -1;
-    background-color: #E7E6E6;
-    height: 250px;
-    border-radius: 8px;
-    border: 2px solid #3C72A2;
+  grid-column: 1 / -1;
+  background-color: #E7E6E6;
+  height: 250px;
+  border-radius: 8px;
+  border: 2px solid #3C72A2;
 }
 
 /* TABLET NÉZET */
 @media (max-width: 991px) and (min-width: 600px) {
   .main-container {
-    width: 100%;
     margin: 12px auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5fr;
+    grid-template-columns: 1fr;
     gap: 16px;
     padding: 16px;
   }
 
   .header {
-    grid-column: 1 / -1;
+    grid-column-start: 1;
+    background-position: center;
+  }
+
+  .sidebar {
+    grid-column-start: 1;
+    grid-row-start: 5;
+  }
+
+  .section-1,
+  .section-2,
+  .section-3 {
+    grid-column-start: 1;
   }
 
   h1 {
@@ -229,7 +239,9 @@ img {
   nav {
     display: none;
   }
-  
+
+
+
 }
 
 /* Mobil NÉZET */
@@ -244,20 +256,27 @@ img {
   }
 
   .header {
-    grid-column: 1 / -1;
+    grid-column-start: 1;
+    background-position: center;
   }
 
   .sidebar {
-    grid-template-columns: 1 / 2;
-    grid-template-rows: 5 / 6;
+    grid-column-start: 1;
+    grid-row-start: 5;
   }
 
+  .section-1,
+  .section-2,
+  .section-3 {
+    grid-column-start: 1;
+  }
+ 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   nav {
     display: none;
   }
-  
+
 }
